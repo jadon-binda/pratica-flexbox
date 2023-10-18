@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90rem;
+  height: 50rem;
+  background-color: #F2F2F2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 57.5rem;
+  height: 31.25rem;
+}
+
+.card1-color {
+  background-color: #E28625;
+}
+
+.card2-color {
+  background-color: #006971;
+}
+
+.card3-color {
+  background-color: #004140;
+}
