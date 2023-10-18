@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -10,20 +13,92 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #F2F2F2;
 }
 
 .container {
-  width: 90rem;
-  height: 50rem;
-  background-color: #F2F2F2;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .card {
-  width: 57.5rem;
-  height: 31.25rem;
+  max-width: 920px;
+  height: 500px;
+  margin-left: -10px;
+  padding: 48px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.card-image {
+  margin-bottom: 35px;
+}
+
+.card-title {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F2F2F2;
+  margin-bottom: 25px;
+}
+
+.card-text,
+.card-btn {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.card-text {
+  width: 212px;
+  margin-bottom: 83px;
+  opacity: 0.75;
+  color: #FFF;
+}
+
+.card-btn {
+  border: none;
+  width: 146px;
+  height: 48px;
+  background-color: #F2F2F2;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.card1-btn-color {
+  color: #E28625;
+}
+
+.card1-btn-color:hover {
+  background-color: #E28625;
+  color: #F2F2F2;
+  border: 2px solid #F2F2F2;
+}
+
+.card2-btn-color {
+  color: #006971;
+}
+
+.card2-btn-color:hover {
+  background-color: #006971;
+  color: #F2F2F2;
+  border: 2px solid #F2F2F2;
+}
+
+.card3-btn-color {
+  color: #004140;
+}
+
+.card3-btn-color:hover {
+  background-color: #004140;
+  color: #F2F2F2;
+  border: 2px solid #F2F2F2;
 }
 
 .card1-color {
