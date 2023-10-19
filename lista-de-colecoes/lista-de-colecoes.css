@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -18,18 +18,18 @@ body {
 .container-main {
   width: 1437px;
   height: 608px;
+  padding: 90px 60px;
   border-radius: 32px;
   background-color: #FFF;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .container-collections {
   display: flex;
   justify-content: center;
   column-gap: 15px;
-  margin-top: 64px;
 }
 
 .container-title {
@@ -43,7 +43,48 @@ body {
 .card-collection {
   width: 429px;
   height: 328px;
+  padding: 50px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card-collection-image {
+  background-color: #FFF;
+  padding: 11px;
+  border-radius: 50%;
+}
+
+.card-collection-title {
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.card-collection-text {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.card-collection-btn {
+  border: none;
+  width: 246px;
+  height: 46px;
+  padding: 12px 20px;
+  border-radius: 3px;
+  background: var(--0-c-1727, #0C1727);
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .search-card {
