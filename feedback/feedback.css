@@ -43,6 +43,12 @@ body {
   position: absolute;
   top: 20px;
   right: 20px;
+  cursor: pointer;
+}
+
+.card-rating-btn-close:hover,
+.card-feedback-btn-close:hover {
+  transform: scale(1.25);
 }
 
 .card-rating-title,
@@ -79,6 +85,11 @@ body {
   opacity: 0.5;
 }
 
+.card-feedback-done a:hover {
+  transform: scale(1.1);
+  opacity: 0.75;
+}
+
 .btn {
   border: none;
   height: 55px;
@@ -88,6 +99,12 @@ body {
   font-weight: 500;
   color: #FFF;
   cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #FFF;
+  color: #2F2D2C;
+  border: 2px solid #2F2D2C;
 }
 
 .card-rating-btn {
