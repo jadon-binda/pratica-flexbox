@@ -81,10 +81,16 @@ body {
   height: 46px;
   padding: 12px 20px;
   border-radius: 3px;
-  background: var(--0-c-1727, #0C1727);
+  background-color: var(--0-c-1727, #0C1727);
   color: #FFF;
   font-size: 1rem;
   font-weight: 500;
+}
+
+.card-collection-btn:hover {
+  background-color: #FFF;
+  color: var(--0-c-1727, #0C1727);
+  outline: 2px solid var(--0-c-1727, #0C1727);
 }
 
 .search-card {
