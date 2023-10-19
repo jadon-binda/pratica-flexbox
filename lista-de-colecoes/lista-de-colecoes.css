@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #E9EEF6;
+  font-family: 'IBM Plex Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container-main {
+  width: 1437px;
+  height: 608px;
+  border-radius: 32px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-collections {
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+  margin-top: 64px;
+}
+
+.container-title {
+  color: var(--0-c-1727, #0C1727);
+  font-family: IBM Plex Sans;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-collection {
+  width: 429px;
+  height: 328px;
+  border-radius: 5px;
+}
+
+.search-card {
+  background-color: #F8F2FA;
+}
+
+.browser-card {
+  background-color: #FAF2F4;
+}
+
+.maps-card {
+  background-color: #F5F2FA;
+}
