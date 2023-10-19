@@ -21,31 +21,40 @@ body {
   column-gap: 58px;
 }
 
-.card-rating {
-  width: 519px;
-  height: 471px;
-  border-radius: 15px;
-  box-shadow: 0px 10px 25px 0px rgba(220, 205, 181, 0.42);
+.card-rating,
+.card-feedback {
   background-color: #FFF;
-  padding: 55px 97px;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: relative;
 }
 
-.card-rating-btn-close {
+.card-rating {
+  width: 519px;
+  height: 471px;
+  box-shadow: 0px 10px 25px 0px rgba(220, 205, 181, 0.42);
+  padding: 55px 97px;
+  align-items: center;
+}
+
+.card-rating-btn-close,
+.card-feedback-btn-close {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
-.card-rating-title {
-  color: #212D59;
-  font-size: 18px;
+.card-rating-title,
+.card-feedback-title {
+  font-size: 1.125rem;
   font-weight: 700;
   line-height: 149.4%;
   text-align: center;
+  color: #212D59;
+}
+
+.card-rating-title {
   margin-bottom: 72px;
 }
 
@@ -62,57 +71,46 @@ body {
   row-gap: 15px;
 }
 
-.card-rating-emoticon span {
-  opacity: 0.5;
-  color: #212D59;
+.card-rating-emoticon span,
+.card-feedback-done a {
   font-size: 1rem;
   font-weight: 500;
+  color: #212D59;
+  opacity: 0.5;
+}
+
+.btn {
+  border: none;
+  height: 55px;
+  background-color: #2F2D2C;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #FFF;
+  cursor: pointer;
 }
 
 .card-rating-btn {
-  border: none;
   width: 208px;
-  height: 55px;
-  border-radius: 5px;
-  background-color: #2F2D2C;
-  color: #FFF;
-  font-size: 1rem;
-  font-weight: 500;
 }
 
 .card-feedback {
   width: 402px;
   height: 374px;
   padding: 45px;
-  border-radius: 15px;
-  background-color: #FFF;
   box-shadow: 0px 10px 45px 0px rgba(191, 124, 95, 0.20);
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.card-feedback-btn-close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
 }
 
 .card-feedback-title {
-  color: #212D59;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 149.4%;
-  text-align: center;
   margin-top: 15px;
   margin-bottom: 40px;
 }
 
 .card-feedback-text {
-  color: #212D59;
   font-size: 1rem;
   font-weight: 500;
   text-align: center;
+  color: #212D59;
   margin-bottom: 40px;
   padding: 0 19px;
 }
@@ -124,20 +122,9 @@ body {
 }
 
 .card-feedback-done a {
-  opacity: 0.5;
-  color: #212D59;
-  font-size: 1rem;
-  font-weight: 500;
   text-decoration: none;
 }
 
-.card-feedback-done button {
-  border: none;
+.card-feedback-done .btn {
   width: 134px;
-  height: 55px;
-  border-radius: 5px;
-  background-color: #2F2D2C;
-  color: #FFF;
-  font-size: 16px;
-  font-weight: 500;
 }
