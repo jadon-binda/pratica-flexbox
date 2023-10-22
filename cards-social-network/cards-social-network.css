@@ -27,6 +27,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 33px;
 }
 
 .nearby-friends-title {
@@ -41,4 +42,40 @@
   font-weight: 400;
   text-align: right;
   text-decoration-line: underline;
+}
+
+.nearby-friend-card {
+  width: 150px;
+  height: 225px;
+  padding: 25px 35px 6px;
+  background-color: #FFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nearby-friend-img {
+  width: 95px;
+  height: 142px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.nearby-friend-name {
+  color: #000;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.nearby-friend-add {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background-color: #000;
+  border-radius: 50%;
 }
