@@ -11,7 +11,11 @@
   background-color: #DADDE1;
   font-family: 'Roboto', sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  row-gap: 70px;
+  padding: 50px 0 59px;
 }
 
 .nearby-friends-wrapper {
@@ -30,13 +34,13 @@
   margin-bottom: 33px;
 }
 
-.nearby-friends-title {
+.nearby-friends-header-title {
   color: #000;
   font-size: 1.375rem;
   font-weight: 700;
 }
 
-.nearby-friends-link-all {
+.nearby-friends-header-link-all {
   color: #000;
   font-size: 1rem;
   font-weight: 400;
@@ -63,7 +67,7 @@
   align-items: center;
 }
 
-.nearby-friend-img {
+.nearby-friend-photo {
   width: 66px;
   border-radius: 50%;
   margin-bottom: 15px;
@@ -83,4 +87,37 @@
   background-color: #000;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.contacts-wrapper {
+  width: 451px;
+  height: 653px;
+  padding: 53px 50px 48px;
+  background-color: #FFF;
+  border-radius: 15px;
+  box-shadow: 0px 24px 74px -20px rgba(130, 148, 173, 0.44);
+}
+
+.contacts-header {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 55px;
+}
+
+.contacts-header-title {
+  color: #000;
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+.contacts-header-number {
+  width: 38px;
+  height: 39px;
+  padding: 6px;
+  color: #040405;
+  font-size: 1.375rem;
+  font-weight: 700;
+  border-radius: 25px;
+  border: 1px solid #000;
 }
