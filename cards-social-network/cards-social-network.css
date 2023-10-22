@@ -4,12 +4,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
   min-height: 100vh;
   background-color: #DADDE1;
-  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,4 +120,60 @@
   font-weight: 700;
   border-radius: 25px;
   border: 1px solid #000;
+}
+
+.contacts-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  margin-bottom: 39px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+}
+
+.contact-card-photo {
+  width: 66px;
+  border-radius: 50%;
+}
+
+.contact-data-wrapper {
+  margin-left: 20px;
+  margin-right: 131px;
+}
+
+.contact-card-name {
+  color: #000;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.contact-card-place {
+  color: #000;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.contact-chat-icon {
+  cursor: pointer;
+}
+
+.contacts-btn {
+  border: none;
+  width: 165px;
+  padding: 18px 30px;
+  border-radius: 60px;
+  background-color: #000;
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contacts-btn:hover {
+  background-color: #FFF;
+  color: #000;
+  outline: 2px solid #040405;
 }
