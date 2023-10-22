@@ -5,3 +5,11 @@
   margin: 0;
   padding: 0;
 }
+
+.container {
+  min-height: 100vh;
+  background-color: #DADDE1;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+}
