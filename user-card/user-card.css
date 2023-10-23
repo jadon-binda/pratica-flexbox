@@ -6,6 +6,12 @@
   padding: 0;
 }
 
+:root {
+  --white: #FFF;
+  --dark: #202142;
+  --border-color: #EFEFFF;
+}
+
 body {
   background-color: hsla(343, 100%, 71%, 0.1);
   width: 100vw;
@@ -14,6 +20,73 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.user-card-follow-wrapper {
+  width: 583px;
+  height: 314px;
+  padding: 38px 30px 30.85px;
+  border-radius: 10px;
+  box-shadow: 0px 16px 45px -15px rgba(2, 5, 132, 0.25);
+  background-color: var(--white);
+}
+
+.user-card-follow-header {
+  display: flex;
+  align-items: center;
+}
+
+.user-card-photo {
+  width: 84px;
+  border-radius: 50%;
+  border: 8px solid var(--border-color);
+  filter: drop-shadow(0px 8px 22.5px rgba(2, 5, 132, 0.20));
+  margin-right: 30px;
+}
+
+.user-card-data-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  flex-grow: 1;
+}
+
+.user-card-name {
+  color: var(--dark);
+  font-size: 1.375rem;
   font-family: 'Merriweather', serif;
+  font-weight: 900;
+}
+
+.user-card-role {
+  color: var(--dark);
   font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.user-card-follow-btn {
+  border: none;
+  padding: 15px 30px;
+  background-color: var(--dark);
+  color: var(--white);
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-card-follow-projects {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.user-card-follow-project-img {
+  width: 165px;
+  border-radius: 10px;
 }
