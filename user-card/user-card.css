@@ -10,6 +10,7 @@
   --white: #FFF;
   --dark: #202142;
   --border-color: #EFEFFF;
+  --dark-purple: #A4A4CB;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  row-gap: 50px;
 }
 
 .user-card-follow-wrapper {
@@ -36,12 +38,22 @@ body {
   align-items: center;
 }
 
+.user-card-container-photo {
+  width: 100px;
+  height: 100px;
+  background-color: var(--white);
+  border: 0.5px solid var(--border-color);
+  border-radius: 50%;
+  filter: drop-shadow(0px 8px 22.5px rgba(2, 5, 132, 0.20));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+}
+
 .user-card-photo {
   width: 84px;
   border-radius: 50%;
-  border: 8px solid var(--border-color);
-  filter: drop-shadow(0px 8px 22.5px rgba(2, 5, 132, 0.20));
-  margin-right: 30px;
 }
 
 .user-card-data-wrapper {
@@ -66,18 +78,23 @@ body {
 }
 
 .user-card-follow-btn {
+  width: 28%;
   border: none;
   padding: 15px 30px;
-  background-color: var(--dark);
+  background: var(--dark) url('./assets/icone-usuario-follow.svg') 30px 15px no-repeat;
+  border-radius: 10px;
   color: var(--white);
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 500px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.user-card-follow-btn:hover {
+  background: var(--white) url('./assets/icone-usuario-following.svg') 30px 15px no-repeat;
+  color: var(--dark);
+  border: 1px solid var(--dark-purple);
 }
 
 .user-card-follow-projects {
@@ -89,4 +106,56 @@ body {
 .user-card-follow-project-img {
   width: 165px;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.user-card-following-wrapper {
+  width: 1170px;
+  height: 222px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 16px 45px -15px rgba(2, 5, 132, 0.25);
+  background-color: var(--white);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.user-card-following-header {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 5px;
+  flex-grow: 1;
+}
+
+.user-card-following-btn {
+  width: 57%;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: 1px solid var(--dark-purple);
+  background: var(--white) url('./assets/icone-usuario-following.svg') 30px 15px no-repeat;
+  color: var(--dark);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: right;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.user-card-following-btn:hover {
+  background: var(--dark) url('./assets/icone-usuario-follow.svg') 30px 15px no-repeat;
+  color: var(--white);
+}
+
+.user-card-following-projects {
+  display: flex;
+  column-gap: 20px;
+}
+
+.user-card-following-project-img {
+  width: 216px;
+  cursor: pointer;
 }
